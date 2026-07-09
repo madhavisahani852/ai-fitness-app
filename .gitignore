@@ -1,0 +1,50 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Environment / Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.gemini/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ── Frontend Build / Cache ───────────────────────────────────────────────────
+.vercel/
+dist/
+node_modules/
+
+# ── Render ───────────────────────────────────────────────────────────────────
+.render/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+*.ipynb
+
+# ── Dataset (large Excel file — not needed at runtime) ───────────────────────
+AI_Fitness_Raw_Dataset.xlsx
+
+# NOTE: backend/models/*.pkl ARE committed intentionally.
+# Render needs them at runtime. Total size ~915 KB, well under GitHub limits.
