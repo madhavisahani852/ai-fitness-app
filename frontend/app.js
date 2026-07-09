@@ -33,10 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ── Backend URL (dynamic detect + localStorage) ──────────────────────
     function getDefaultUrl() {
-        const DEV_API = "http://localhost:5000";
-        const PROD_API = "https://fitness-app.onrender.com";
+        const DEV_API  = "http://localhost:5000";
+        const PROD_API = "https://ai-fitness-app-emnf.onrender.com";
 
-        return window.location.hostname === "localhost"
+        const host = window.location.hostname;
+        return (host === "localhost" || host === "127.0.0.1")
             ? DEV_API
             : PROD_API;
     }
